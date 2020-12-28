@@ -4,8 +4,8 @@
     <template v-for="(item, index) in dataSource">
       <Tree :key="index" :item="item" />
     </template>
-    <div />
-  </div></template>
+  </div>
+</template>
 
 <script lang='ts'>
 import { Vue, Component, Watch, Prop } from 'vue-property-decorator'

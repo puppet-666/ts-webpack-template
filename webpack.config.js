@@ -18,6 +18,7 @@ module.exports = {
     filename: 'main.js',
     publicPath: '/'
   },
+  mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
   externals: process.env.NODE_ENV === 'production' ? external : {},
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
